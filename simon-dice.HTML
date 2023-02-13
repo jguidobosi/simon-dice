@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Simón Dice</title>
+  <link rel="icon" type="image/x-icon" href="icon.jpg">
+  <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+  <style type="text/css">
+
+    .box{
+      height: 350px;
+      background-color: cadetblue;
+      margin-top: 30px;
+      text-align: center;
+      padding: 150px 0;
+      color: black;
+      font-weight: bolder;
+      opacity: 50%;
+      transition:opacity 0.5s;  
+    }
+
+    head,body{
+      background-color:black;
+      color: whitesmoke;
+      margin-top: 30px
+    }
+    #box-A{
+      background-color:cyan;
+    }
+    #box-B{
+      background-color: crimson;
+    }
+    #box-C{
+      background-color:darkorange;
+    }
+    #box-D{
+      background-color:chartreuse;
+  
+    }
+    .hidden{
+      visibility: hidden;
+    }
+  </style>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>
+            Simon-Dice
+            <small id = "turno"class="text-muted">Comienza a jugar!</small>
+          </h3>
+        </div>
+        <div  class="col-sm-4">
+          <div id="final" class="alert alert-primary hidden" role="alert">
+            This is a primary alert—check it out!
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button id="start-button" type="button" class="btn btn-primary btn-lg">Empezar el juego</button>
+        </div>
+      </div>
+  </div>
+ 
+</head>
+
+<body>
+    <div class="container" id="game-board">
+      <div class="row">
+        <div class="col">
+          <div id="box-A" class = "box">A</div>
+        </div>
+        <div class="col">
+          <div id="box-B" class = "box">B</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="box-C" class = "box">C</div>
+        </div>
+        <div class="col">
+          <div id="box-D" class = "box">D</div>
+        </div>
+    </div>
+    <script src="simon-dice.js"></script>
+</body>
+
+</html>

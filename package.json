@@ -1,0 +1,18 @@
+{
+  "name": "simon-dice",
+  "version": "1.0.0",
+  "description": "ejercicio r/argentinaprograma",
+  "main": "simon-dice.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jguidobosi/simon-dice"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
